@@ -1,0 +1,73 @@
+.page-header{
+  color: #000000;
+  background-color:#ffffff;
+}
+.navigation{
+  background-color:#FFE17F;
+  max-width: 1160px;
+  margin: 0 auto;
+}
+.navigation-list{
+  display: flex;
+  margin: 0;
+  list-style-type: none;
+  padding: 0;
+}
+.navigation-link {
+  text-decoration: none;
+  color: #000000;
+}
+.wrapper-user{
+  display: flex;
+  width: 1040px;
+  margin: 0 auto;
+}
+.navigation-user__item{
+  width: 231px;
+  text-align: center;
+}
+.find-form{
+  display: flex;
+  align-items: center;
+  width: 517px;
+  box-sizing: border-box;
+  border-radius: 20px 20px 20px 20px;
+  border: 2px solid #000000;
+}
+.find-field {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+.field-input {
+  border: none;
+  outline: none;
+  flex-grow: 1;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 10px;
+  background-color: inherit;
+}
+.find-button {
+  width: 160px;
+  background: inherit;
+  border: none;
+  border-left: 2px solid #000000;
+  border-radius: 0 20px 20px 0;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.find-field::before {
+  content: "";
+  align-items: center;
+  background-image: url('/source/img/Vector.png'); /* Путь к картинке */
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 48px;
+  height: 40px;
+  margin-right: 10px;
+}

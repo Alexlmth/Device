@@ -1,0 +1,23 @@
+.html {
+  height: 100%;
+}
+.body{
+  display: flex;
+  flex-direction: column;
+  font-family: "rubik", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #444444;
+  background-color: #FFFFFF;
+  margin: 0;
+  padding-top: 27px;
+}
+.button{
+  font-family: Raleway;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21.13px;
+  color: #000000;
+  text-align: center;
+}
