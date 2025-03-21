@@ -9,38 +9,44 @@
     <header class="page-header">
       <nav class="navigation">
         <a class="navigation-logo" href="index.html">
-          <img class="page-header-logo" src="img/logo.png" width="145" height="36" alt="Логотип" src="">
+          <img class="page-header-logo" src="img/logo.svg" width="145" height="36" alt="Логотип" src="">
         </a>
-    <!--<div class="wrapper-user">-->
-          <ul class="navigation-list">
-            <li class="navigation-item">
-              <form class="find-form" action="https://echo.htmlacademy.ru/" method="post">
-                <label class="find-field field">
-                  <span class="visually-hidden">поиск</span>
-                  <input class="field-input" type="text" name="find" placeholder="Текст поиска">
-                </label>
-                <button class="find-button" type="submit">Найти</button>
-              </form>
-            </li>
-            <li class="navigation-user__item">
-              <a class="navigation-link" href="#">
-                Войти
+        <ul class="navigation-list">
+          <li class="navigation-item">
+            <form class="find-form" action="https://echo.htmlacademy.ru/" method="post">
+              <label class="find-field">
+                <span class="visually-hidden">поиск</span>
+                <input class="field-input" type="text" name="find" placeholder="Текст поиска">
+              </label>
+              <button class="find-button" type="submit">Найти</button>
+            </form>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link navigation-link__login" href="#">
+              <svg class="navigation-icon" width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_78739_894)">
+                <path d="M1.5 12.3889H14.5C14.3 9.78892 12.4 7.58892 9.8 6.88892C10.8 6.28892 11.5 5.18892 11.5 3.88892C11.5 1.98892 9.9 0.388916 8 0.388916C6.1 0.388916 4.5 1.98892 4.5 3.88892C4.5 5.18892 5.2 6.28892 6.2 6.88892C3.6 7.58892 1.7 9.78892 1.5 12.3889Z" fill="black"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_78739_894">
+                <rect width="15" height="12" fill="white" transform="translate(0.5 0.388916)"/>
+                </clipPath>
+                </defs>
+                </svg>
+              Войти
+            </a>
+          </li>
+          <li class="navigation-item">
+            <div class="navigation-link__wrapper">
+              <a class="navigation-link navigation-link__compare" href="#">
+                Сравнить
               </a>
-            </li>
-          </ul>
-          <ul class="navigation-list additional-menu">
-              <li class="navigation-item">
-                <a class="navigation-link" href="#">
-                  Сравнить
-                </a>
-              </li>
-              <li class="navigation-item">
-                <a class="navigation-link" href="#">
-                  Корзина
-                </a>
-              </li>
-          </ul>
-    <!--</div>-->
+              <a class="navigation-link" href="#">
+                Корзина
+              </a>
+            </div>
+          </li>
+        </ul>
         <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-link" href="catalog.html">Каталог товаров</a>

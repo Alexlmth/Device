@@ -53,31 +53,18 @@
 
 .navigation {
   background-color: #FFE17F;
-  max-width: 1160px;
+  width: 1160px;
   margin: 0 auto;
 }
 
 .navigation-list {
   display: flex;
-  margin: 0;
-  list-style-type: none;
-  padding: 0;
-}
-
-.navigation-link {
-  text-decoration: none;
-  color: #000000;
-}
-
-.wrapper-user {
-  display: flex;
+  justify-content: space-between;
   width: 1040px;
   margin: 0 auto;
-}
-
-.navigation-user__item {
-  width: 231px;
-  text-align: center;
+  padding: 0;
+  list-style-type: none;
+  padding: 0;
 }
 
 .find-form {
@@ -93,6 +80,7 @@
   position: relative;
   display: flex;
   align-items: center;
+  padding-left: 48px;
   flex-grow: 1;
 }
 
@@ -120,22 +108,56 @@
 }
 
 .find-field::before {
+  position: absolute;
+  left: 24px;
   content: "";
-  align-items: center;
-  background-image: url("/source/img/Vector.png");
+  background-image: url("../img/Vector.svg");
   /* Путь к картинке */
   background-size: contain;
   background-repeat: no-repeat;
-  width: 48px;
-  height: 40px;
-  margin-right: 10px;
+  width: 16px;
+  height: 16px;
+}
+
+.navigation-link {
+  display: block;
+  padding: 5px;
+  text-align: center;
+  color: #000000;
+  background-color: #FFE17F;
+  text-decoration: none;
+}
+
+.navigation-link__login {
+  position: relative;
+  padding-left: 27px;
+  margin-right: 150px;
+}
+
+.navigation-icon {
+  position: absolute;
+  left: 0;
+  top: 13px;
+}
+
+.navigation-link__wrapper {
+  display: flex;
+  width: 241px;
+}
+
+.navigation-link__compare {
+  background-image: url("../img/diagram.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 10px;
+  height: 12px;
 }
 
 .main {
   flex-grow: 1;
 }
 
-.main h3, h2, a {
+.main h3, h2 {
   font-family: "Raleway";
   font-weight: 800;
 }
