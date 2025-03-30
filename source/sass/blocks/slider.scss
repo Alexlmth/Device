@@ -1,3 +1,7 @@
+.slider{
+  display: flex;
+  justify-content: space-between;
+}
 .slider-subtitle {
    font-size: 50px;
    line-height: 50px;
@@ -6,6 +10,32 @@
   font-size: 36px;
   line-height: 30px;
 }
-.slider-button {
+.slider-button{
   text-decoration: none;
+  width: 20px;
+  height: 60px;
+  color: #000000;
+  background-color: #FFFFFF;
+  border: none;
+  background-image: url("../img/arrow_prev.svg");
+  background-position: center;
+  background-repeat: no-repeat;
 }
+.slider-next{
+  transform: rotate(180deg);
+}
+.slider-image__wrapper{
+  position: relative;
+}
+.slider-image {
+  display: block;
+}
+.slider-control{
+  position: absolute;
+  top: 211px;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 530px;
+}
+

@@ -3,9 +3,18 @@
   background-color:#ffffff;
 }
 .navigation{
+  position: relative;
   background-color:#FFE17F;
   width: 1160px;
+  padding-top: 43px;
+  padding-bottom: 136px;
   margin: 0 auto;
+}
+.navigation-logo{
+  position: absolute;
+  left: 60px;
+  top: -22px;
+
 }
 .navigation-list{
   display: flex;
@@ -14,7 +23,6 @@
   margin: 0 auto;
   padding: 0;
   list-style-type: none;
-  padding: 0;
 }
 .find-form{
   display: flex;
@@ -64,21 +72,24 @@
 }
 .navigation-link {
   display: block;
-  padding: 5px;
+  position: relative;
+  padding: 5px 0;
   text-align: center;
   color: #000000;
   background-color: #FFE17F;
   text-decoration: none;
 }
 .navigation-link__login{
-  position: relative;
   padding-left: 27px;
   margin-right: 150px;
 }
 .navigation-icon{
   position: absolute;
+  top: 0;
+  bottom: 0;
   left: 0;
-  top: 13px;
+  right: 0%;
+  margin: auto 0;
 }
 
 .navigation-link__wrapper{
@@ -92,5 +103,49 @@
   background-size: 10px 12px;
   padding-left: 22px;
   background-position: left top 13px ;
-  margin-right: 18px;
+  margin-right: auto;
 }
+.navigation-link__basket{
+  padding-left: 42px;
+}
+.navigation-link__basket .navigation-icon{
+  right: auto;
+  left: 15px;
+  margin: auto 0;
+  padding-bottom: 6px;
+}
+.navigation-icon__counter{
+  position: absolute;
+  min-width: 21px;
+  height: 21px;
+  left: 0;
+  right: auto;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  background-color: #ffffff;
+  border-radius: 50%;
+  line-height: 21px;
+  text-align: center;
+}
+.navigation-main {
+  font-family: "raleway";
+  font-weight: 800;
+  line-height: 50px;
+  letter-spacing: 0.2em;
+  margin-top: 30px;
+}
+.navigation-main .navigation-link__wrapper{
+  display: flex;
+  width: 471px;
+  justify-content: space-between;
+}
+.navigation-main .navigation-item > .navigation-link{
+  padding-right: 57px;
+  width: 253px;
+}
+.navigation-main .navigation-icon{
+  left: auto;
+  margin: auto 0;
+}
+
