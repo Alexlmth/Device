@@ -223,6 +223,7 @@
 .main h3, h2 {
   font-family: "Raleway";
   font-weight: 800;
+  margin: 0;
 }
 
 .main a {
@@ -264,9 +265,17 @@
   text-decoration: none;
 }
 
+.slider-mover {
+  position: relative;
+  padding-top: 480px;
+}
+
 .slider {
+  position: absolute;
+  top: -170px;
   display: flex;
   justify-content: space-between;
+  width: 1160px;
 }
 
 .slider-subtitle {
@@ -299,7 +308,7 @@
   position: relative;
 }
 
-.slider-image {
+.slider-image, .slider-image_number {
   display: block;
 }
 
@@ -312,6 +321,31 @@
   width: 530px;
 }
 
+.slider-description__wrapper {
+  position: relative;
+  width: 560px;
+  padding-top: 123px;
+}
+
+.slider-image_number {
+  position: absolute;
+  top: 25px;
+  right: 33px;
+}
+
+.slider-description__wrapper .slider-subtitle {
+  position: relative;
+}
+
+.button {
+  display: block;
+  width: 220px;
+  letter-spacing: 0.2em;
+  line-height: 40px;
+  background-color: #FFE17F;
+  box-shadow: inset 0 16px 0 0 #ffffff, inset 0 -16px 0 0 #ffffff;
+}
+
 .catalog__item {
   width: 160px;
   text-align: center;
@@ -322,6 +356,12 @@
   font-size: 18px;
   color: #000;
   text-align: left;
+}
+
+.catalog__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 .deleviry__link {
