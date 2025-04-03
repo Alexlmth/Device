@@ -342,8 +342,43 @@
   width: 220px;
   letter-spacing: 0.2em;
   line-height: 40px;
+  text-transform: uppercase;
   background-color: #FFE17F;
   box-shadow: inset 0 16px 0 0 #ffffff, inset 0 -16px 0 0 #ffffff;
+}
+
+.control-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider-pagination {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 76px;
+}
+
+.slider-pagination-item {
+  margin: auto 0;
+}
+
+.slider-pagination-button {
+  width: 12px;
+  height: 12px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 2px solid #000000;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider-pagination-button-current {
+  background-color: #000000;
 }
 
 .catalog__item {
