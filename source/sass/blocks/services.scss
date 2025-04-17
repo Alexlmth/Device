@@ -1,5 +1,5 @@
 .services{
-  background: linear-gradient(to top, rgb(126, 125, 125) 289px, #ffffff 0px);
+  background: linear-gradient(to top,#b7b7b7 289px, #ffffff 0px);
 }
 .services-wrapper{
   display: grid;
@@ -12,6 +12,34 @@
 .services-switcher__list,.services__list{
   list-style-type: none;
   padding: 0;
+  margin: 0;
+}
+.services-switcher__list{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+  border-right: 7px solid #000000 ;
+}
+.services-switcher__item{
+  margin-bottom: 35px;
+}
+.services-switcher__item:nth-child(3){
+  margin-bottom: 0;
+}
+.services-switcher__button{
+  width: 160px;
+  margin-right: 120px;
+  border: none;
+}
+.services-switcher__button-current{
+  background: none;
+  color: #FFE17F ;
+  background-color: #000000;
+  margin: 0;
+  text-align: left;
+  padding-left: 18px;
+  width: 280px;
 }
 .services__item{
   display: flex;

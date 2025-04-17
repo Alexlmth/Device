@@ -351,8 +351,7 @@
   letter-spacing: 0.2em;
   line-height: 40px;
   text-transform: uppercase;
-  background-color: #FFE17F;
-  box-shadow: inset 0 16px 0 0 #ffffff, inset 0 -16px 0 0 #ffffff;
+  background: linear-gradient(to bottom, transparent 16px, #FFE17F 16px, #FFE17F 24px, transparent 16px);
 }
 
 .control-wrapper {
@@ -466,7 +465,7 @@
 }
 
 .services {
-  background: linear-gradient(to top, #7e7d7d 289px, #ffffff 0px);
+  background: linear-gradient(to top, #b7b7b7 289px, #ffffff 0px);
 }
 
 .services-wrapper {
@@ -480,6 +479,39 @@
 .services-switcher__list, .services__list {
   list-style-type: none;
   padding: 0;
+  margin: 0;
+}
+
+.services-switcher__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+  border-right: 7px solid #000000;
+}
+
+.services-switcher__item {
+  margin-bottom: 35px;
+}
+
+.services-switcher__item:nth-child(3) {
+  margin-bottom: 0;
+}
+
+.services-switcher__button {
+  width: 160px;
+  margin-right: 120px;
+  border: none;
+}
+
+.services-switcher__button-current {
+  background: none;
+  color: #FFE17F;
+  background-color: #000000;
+  margin: 0;
+  text-align: left;
+  padding-left: 18px;
+  width: 280px;
 }
 
 .services__item {
