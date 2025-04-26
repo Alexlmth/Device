@@ -1,6 +1,50 @@
+.about{
+  position: relative;
+  width: 520px;
+  padding-top: 47px;
+}
+.about::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;              /* выравнивание по высоте строки (можно подправить) */
+  width: 84px;
+  height: 7px;
+  background-color:#000000;
+}
+.about__title{
+  margin-bottom: 48px;
+}
+.about__text{
+  margin-bottom: 30px;
+}
+.companies__list{
+  list-style: none;        /* убираем стандартные маркеры */
+  padding: 0;
+  margin: 0;
+  margin-bottom: 30px;
+}
+.companies__list li{
+  position: relative;      /* для позиционирования маркера */
+  padding-left: 34px;      /* 8px (размер маркера) + 26px (расстояние до текста) */
+  margin-bottom: 19px;     /* вертикальный отступ между элементами */
+}
+.companies__list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 6px;              /* выравнивание по высоте строки (можно подправить) */
+  width: 8px;
+  height: 8px;
+  background-color:#FFC700;
+  border-radius: 50%;      /* делает маркер круглым */
+}
 .companies__item .companies__title{
   font-family: Rubik;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
+}
+.about-link{
+  width: 270px;
 }

@@ -1,6 +1,37 @@
+.deleviry{
+margin-bottom: 70px;
+}
+.deleviry__wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1160px;
+  margin: 0 auto;
+  background-color: #F0F0F0;
+
+}
 .deleviry__link{
-  font-size: 20px;
-  line-height: 23.48;
+  display: flex;
+  align-items: center;
   color: #000;
   text-decoration: none;
+  text-align: center;
+}
+.info{
+  padding: 0;
+  border: none;
+  display: inline-flex;
+}
+.deleviry__description{
+  width: 910px;
+  font-family: Raleway;
+  font-weight: 800;
+  font-size: 20px;
+  letter-spacing: 02px;
+  text-transform: uppercase;
+
+}
+.deleviry__link svg,
+.info svg {
+  display: block; /* убирает выравнивание по baseline */
 }

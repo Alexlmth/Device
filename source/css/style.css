@@ -48,6 +48,11 @@
   text-align: center;
 }
 
+.index-columns {
+  display: flex;
+  justify-content: space-between;
+}
+
 .page-header {
   color: #000000;
   background-color: #ffffff;
@@ -247,7 +252,7 @@
   background-color: #444444;
 }
 
-.contacts__text {
+.footer-contacts__text {
   font-size: 16px;
   line-height: 20px;
 }
@@ -432,11 +437,101 @@
   margin-bottom: 70px;
 }
 
+.deleviry {
+  margin-bottom: 70px;
+}
+
+.deleviry__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1160px;
+  margin: 0 auto;
+  background-color: #F0F0F0;
+}
+
 .deleviry__link {
-  font-size: 20px;
-  line-height: 23.48;
+  display: flex;
+  align-items: center;
   color: #000;
   text-decoration: none;
+  text-align: center;
+}
+
+.info {
+  padding: 0;
+  border: none;
+  display: inline-flex;
+}
+
+.deleviry__description {
+  width: 910px;
+  font-family: Raleway;
+  font-weight: 800;
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.deleviry__link svg,
+.info svg {
+  display: block;
+  /* убирает выравнивание по baseline */
+}
+
+.about {
+  position: relative;
+  width: 520px;
+  padding-top: 47px;
+}
+
+.about::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  /* выравнивание по высоте строки (можно подправить) */
+  width: 84px;
+  height: 7px;
+  background-color: #000000;
+}
+
+.about__title {
+  margin-bottom: 48px;
+}
+
+.about__text {
+  margin-bottom: 30px;
+}
+
+.companies__list {
+  list-style: none;
+  /* убираем стандартные маркеры */
+  padding: 0;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.companies__list li {
+  position: relative;
+  /* для позиционирования маркера */
+  padding-left: 34px;
+  /* 8px (размер маркера) + 26px (расстояние до текста) */
+  margin-bottom: 19px;
+  /* вертикальный отступ между элементами */
+}
+
+.companies__list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 6px;
+  /* выравнивание по высоте строки (можно подправить) */
+  width: 8px;
+  height: 8px;
+  background-color: #FFC700;
+  border-radius: 50%;
+  /* делает маркер круглым */
 }
 
 .companies__item .companies__title {
@@ -446,11 +541,71 @@
   line-height: 20px;
 }
 
+.about-link {
+  width: 270px;
+}
+
+.contacts {
+  position: relative;
+  width: 532px;
+  padding-top: 47px;
+  margin-bottom: 70px;
+}
+
+.contacts::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  /* выравнивание по высоте строки (можно подправить) */
+  width: 84px;
+  height: 7px;
+  background-color: #000000;
+}
+
+.contacts__title {
+  margin-bottom: 48px;
+}
+
+.contacts__text {
+  margin-bottom: 30px;
+}
+
+.contacts__address {
+  font-style: normal;
+  margin-bottom: 30px;
+}
+
+.address {
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+
+.contacts-phone {
+  color: #444444;
+}
+
+.contacts-schedule {
+  list-style: none;
+  /* убираем стандартные маркеры */
+  padding: 0;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
 .contacts .contacts-subtitle {
   font-family: Rubik;
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
+}
+
+.contacts .contacts-subtitle__time {
+  margin-bottom: 15px;
+}
+
+.contacts-link {
+  width: 259px;
 }
 
 .visually-hidden {
@@ -465,7 +620,8 @@
 }
 
 .services {
-  background: linear-gradient(to top, #b7b7b7 289px, #ffffff 0px);
+  background: linear-gradient(to top, #F0F0F0 289px, #ffffff 0px);
+  margin-bottom: 70px;
 }
 
 .services-wrapper {
@@ -539,5 +695,86 @@
 
 .services__text {
   margin: 0;
+}
+
+.subscribe {
+  background-color: #acaaaa;
+}
+
+.subscribe-wrapper {
+  width: 1160px;
+  margin: 0 auto;
+  padding-top: 64px;
+  padding-bottom: 56px;
+}
+
+.subscribe-title {
+  padding-left: 7px;
+}
+
+.subscribe-text {
+  width: 553px;
+  margin: 0;
+}
+
+.subscribe-wrapper__text {
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 144px;
+}
+
+.subscribe-form {
+  width: 810px;
+  display: grid;
+  grid-template-columns: 1fr 253px;
+}
+
+.field {
+  display: flex;
+}
+
+.field__input {
+  width: 100%;
+  font-family: "rubik";
+  padding: 11px 0 14px 16px;
+  line-height: 30px;
+  border: none;
+  border-bottom: 3px solid #5e5d5d;
+  background-color: #acaaaa;
+}
+
+.subscribe__button {
+  width: 253px;
+  background: none;
+  background-color: #acaaaa;
+  border: 3px solid #5e5d5d;
+}
+
+.subscribe__legend {
+  position: relative;
+  width: 128px;
+  padding-left: 32px;
+  margin: 0;
+  align-self: center;
+}
+
+.subscribe__legend::before {
+  position: absolute;
+  content: "";
+  background-image: url("../img/golca.svg");
+  /* Путь к картинке */
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 14px;
+  height: 14px;
+  top: 10px;
+  left: 0;
+}
+
+.subscribe-form__wrapper {
+  display: flex;
+  justify-content: space-between;
 }
 /*# sourceMappingURL=style.css.map */

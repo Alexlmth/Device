@@ -1,0 +1,68 @@
+.subscribe{
+  background-color: #acaaaa;
+}
+.subscribe-wrapper{
+  width: 1160px;
+  margin: 0 auto;
+  padding-top: 64px;
+  padding-bottom: 56px;
+}
+.subscribe-title{
+  padding-left: 7px;
+}
+.subscribe-text{
+  width: 553px;
+  margin: 0;
+}
+.subscribe-wrapper__text{
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 144px;
+}
+.subscribe-form{
+  width: 810px;
+  display: grid;
+  grid-template-columns: 1fr 253px;
+}
+.field{
+  display: flex;
+}
+.field__input{
+  width: 100%;
+  font-family: "rubik";
+  padding: 11px 0 14px 16px;
+  line-height: 30px;
+  border: none;
+  border-bottom: 3px solid #5e5d5d;
+  background-color: #acaaaa;
+}
+.subscribe__button{
+  width: 253px;
+  background: none;
+  background-color: #acaaaa;
+  border: 3px solid #5e5d5d;
+}
+.subscribe__legend{
+  position: relative;
+  width: 128px;
+  padding-left: 32px;
+  margin: 0;
+  align-self: center;
+}
+.subscribe__legend::before{
+  position: absolute;
+  content: '';
+  background-image: url('../img/golca.svg'); /* Путь к картинке */
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 14px;
+  height: 14px;
+  top: 10px;
+  left:0;
+}
+.subscribe-form__wrapper{
+  display: flex;
+  justify-content: space-between;
+}

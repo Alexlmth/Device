@@ -1,6 +1,50 @@
+.contacts{
+  position: relative;
+  width: 532px;
+  padding-top: 47px;
+  margin-bottom: 70px;
+}
+.contacts::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;              /* выравнивание по высоте строки (можно подправить) */
+  width: 84px;
+  height: 7px;
+  background-color:#000000;
+}
+.contacts__title{
+  margin-bottom: 48px;
+}
+.contacts__text{
+  margin-bottom: 30px;
+}
+.contacts__address{
+  font-style: normal;
+  margin-bottom: 30px;
+}
+.address{
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+.contacts-phone{
+  color: #444444;
+}
+.contacts-schedule{
+  list-style: none;        /* убираем стандартные маркеры */
+  padding: 0;
+  margin: 0;
+  margin-bottom: 30px;
+}
 .contacts .contacts-subtitle{
   font-family: Rubik;
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
+}
+.contacts .contacts-subtitle__time{
+  margin-bottom: 15px;
+}
+.contacts-link{
+  width: 259px;
 }
