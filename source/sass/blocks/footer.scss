@@ -2,14 +2,96 @@
   color: #FFFFFF;
   background-color: #444444;
 }
+.page-footer__wrapper{
+  display: flex;
+  width: 1160px;
+  margin: 0 auto;
+  padding-top: 62px;
+  padding-bottom: 61px;
+}
+.footer-contacts{
+  position: relative;
+  width: 234px;
+  margin-right: 117px;
+}
+.footer-contacts::before{
+  position: absolute;
+  content: '';
+  width: 80px;
+  height: 7px;
+  background-color: #FFC500;
+  top: 175px;
+}
+.footer-contacts__logo{
+  display: block;
+  margin-bottom: 35px;
+}
 .footer-contacts__text{
+  letter-spacing: -1px;
+  font-style: normal;
   font-size: 16px;
   line-height: 20px;
+  margin: 0;
+}
+.foter-rows{
+  width: 444px;
+  padding-top: 75px;
+}
+.footer-social-list,.footer-services__list{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.footer-services__list{
+  font-family: "Raleway";
+  display: flex;
+  justify-content: space-between;
+  font-weight: 800;
+  letter-spacing: 3.07px;
+  text-transform: uppercase;
+  line-height: 21px;
+  margin-bottom: 62px;
 }
 .footer-services__link{
   line-height: 21.13px;
   color: #FFFFFF;
   text-decoration: none;
+}
+.footer-social-list{
+  display: flex;
+  justify-content: center;
+}
+.footer-social-item{
+  width: 40px;
+  height: 40px;
+  margin-right: 7.5px;
+  margin-left: 7.5px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+  .footer-social__link {
+    display: block;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 16px 16px;
+  }
+
+  .footer-social-tw{
+    background-image: url("../img/twitter.svg");
+  }
+
+  .footer-social-f{
+    background-image: url("../img/facebook.svg");
+  }
+
+  .footer-social-ins{
+    background-image: url("../img/instagram.svg");
+  }
+.page-footer__copyright{
+  width: 175px;
+  margin-left: auto;
+  text-align: end;
 }
 .footer-phone{
   font-family: Rubik;
@@ -17,5 +99,8 @@
   font-size: 16px;
   line-height: 20px;
   color: #FFFFFF;
-  text-decoration: none;
+  text-decoration: underline;
+}
+.copyright-image{
+  padding-top: 64px;
 }
